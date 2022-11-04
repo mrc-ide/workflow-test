@@ -2,11 +2,11 @@ on:
   push:
     branches:
       - main
-   workflow_dispatch:
-     inputs:
-       orderly_version:
-         type: string
-         description: The orderly version to install
+  workflow_dispatch:
+    inputs:
+      orderly_version:
+        type: string
+        description: The orderly version to install
 
 name: trigger-me
 
