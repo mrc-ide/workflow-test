@@ -13,8 +13,9 @@ name: trigger-me
 jobs:
   trigger-me:
     runs-on: "ubuntu-20-04"
-  strategy:
-    fail-fast: false
+    
+    strategy:
+      fail-fast: false
 
     steps:
       - name: Inputs
