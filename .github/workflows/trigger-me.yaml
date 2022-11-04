@@ -32,5 +32,6 @@ jobs:
           ORDERLY_VERSION: ${{ github.event.inputs.orderly_version }}
         run: |
           install <- paste0("vimc/orderly@", Sys.getenv("ORDERLY_VERSION"))
+          install.packages("remotes")
           remotes::install_github(install)
         shell: Rscript {0}
